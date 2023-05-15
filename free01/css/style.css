@@ -1,0 +1,244 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200&display=swap');
+
+.inner_container { margin: 0 auto; width: 1400px;}
+a {text-decoration: none; color: #333; }
+body {background-color: rgb(252, 247, 240); }
+/* 헤더 */
+header {
+    text-align: center;
+    margin-top: 10px;
+    position: relative;
+}
+header nav {
+    position: absolute;
+    top: 20%;
+}
+header nav ul li { float: left;}
+header nav ul li a {
+    display: block;
+    width: 134px;
+    top: 50px;
+    font-size: 12px;
+}
+header nav ul li:first-child a {margin-right: -30px;}
+
+header .icon { position: absolute; top: 5px; right: 50px;}
+header .icon li {display: inline-block; margin-right: -2px;}
+header .icon img { width: 13px; height: 13px; object-fit: cover;
+     margin-left: 10px;
+}
+/* 메인비주얼 */
+ 
+.visual_area { height: 850px; background: center no-repeat; margin-top: 5px;}
+.visual1 {background-image: url(../image/main\ head1.avif); }
+.visual2 {background-image: url(../image/main\ head4.avif); }
+.visual3 {background-image: url(../image/main\ head2.avif); }
+.visual4 {background-image: url(../image/main\ head3.avif); }
+.bx-wrapper {overflow: hidden; position: relative;}
+.slider_text1 {
+    text-align: center;
+    font-family: 'Noto Serif KR', serif;
+    font-size: 35px;
+    margin-top: 650px;
+    line-height: 50px;
+} 
+.slider_text1 p em { font-size: 14px; border-bottom: 1px solid ;}
+.visual2 .slider_text1  {color: white; }
+.visual2 .slider_text1 a {color: white;}
+.visual4 .slider_text1 {color: white;}
+.visual4 .slider_text1 a {color: white;}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+}
+.slider_text1 {
+    position: relative;
+    animation: fadeInUp 1s;
+}
+/* 아래서 위로 애니메이션 넣기 */
+
+.main_visual .bx-controls-direction a {
+    display: block;
+    width: 20px; height: 20px;
+    color: white; 
+    position: absolute;
+    top: 425px;
+    border-width: 2px 2px 0 0;
+    border-style: solid;
+    text-indent: -9999px;
+    opacity: 0.2;
+}
+.main_visual .bx-controls-direction a:hover {opacity: 0.7;}
+.main_visual .bx-controls-direction .bx-prev {left: 40px; transform: translateY(-50%) rotate(-135deg);}
+.main_visual .bx-controls-direction .bx-next {right: 40px; transform: translateY(-50%) rotate(45deg);}
+
+.main_visual .bx-pager {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    bottom: 25px;
+    font-size: 0;
+}
+
+/* 1코롱 */
+#item {
+    height: 330px;
+    position: relative;
+    margin-top: 100px;
+}
+#item ul li {
+    float: left;
+    margin-top: 130px; 
+    margin-left: 100px;
+    margin-left: 140px;
+}
+#item ul li:first-child {margin-top: 250px; margin-left: 100px;}
+#item ul li:first-child img { margin-top: 10px; }
+#item ul li:nth-of-type(4) {margin-top: 170px;}
+#item ul li p { 
+    margin-top: 40px; 
+    text-align: center; 
+    font-size: 14px; 
+    position: absolute;
+    font-family: 'Noto Serif KR', serif;
+}
+#item ul li:nth-child(1) img  {width: 90; height: 40px; object-fit: cover; }
+#item ul li:nth-child(2) img {width: 150; height: 250px; object-fit: cover;}
+#item ul li:nth-child(3) img {width: 150; height: 250px; object-fit: cover;}
+#item ul li:nth-child(4) img {width: 100; height: 210px; object-fit: cover;}
+#item ul li:nth-child(4) {margin-left: 144px;}
+#item ul li:nth-child(2) {margin-right: 14px;}
+#item ul li:nth-child(2) p {margin-left: -20px;}
+#item ul li:nth-child(3) p {margin-left: 10px;}
+#item ul li:nth-child(4) p {margin-left: 25px;}
+
+/* 부띠끄 혜택 */
+#gift1 {
+    margin-top: 370px;
+    text-align: center;
+}
+#gift1 p {
+    font-size: 28px;
+    font-family: 'Noto Serif KR', serif;
+    margin-bottom: 55px;
+    line-height: 38px;
+}
+#gift1 p em {font-size: 13px; border-bottom: 1px solid #333; }
+
+/* 베스트 셀러 */
+#best {
+    margin-top: 250px;
+    text-align: center;
+}
+#best img {
+    width: 1100px; 
+    height : 800px; 
+    object-fit: cover; 
+}
+#best p {
+    font-size: 28px;
+    width: 140px;
+    margin-left: 640px;
+    margin-top: -45px;
+    font-family: 'Noto Serif KR', serif;
+    margin-bottom: 80px;
+    line-height: 38px;
+}
+#best p em {font-size: 13px; border-bottom: 1px solid #333; }
+
+/* section 2 */
+#item2 {margin-top: 65px; }
+#item2 ul { margin-left: 50px;}
+#item2 ul li {
+    float: left;
+    width: 300px;
+    margin-left: 20px;
+    text-align: center;
+}
+#item2 ul li img {width: 140px; height: 324px; object-fit: cover;}
+#item2 ul li p {
+    float: left;
+    margin-top: 50px;
+    width: 300px;
+    font-size: 14px;
+    font-family: 'Noto Serif KR', serif;
+}
+/* ... */
+/* 컬렉션 */
+#menu  {margin-left: 190px;}
+#menu ul li{
+    margin-top: 200px;
+    float: left;
+    margin-left: 130px;
+    text-align: center;
+}
+#menu ul li p {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 25px;
+    font-family: 'Noto Serif KR', serif;
+    line-height: 28px;
+}
+#menu p em {font-size: 13px; border-bottom: 1px solid #333; }
+/* 푸터 */
+footer {
+    height: 780px;
+    margin-top: 1490px;
+    position: relative;
+    background-color: white;
+}
+footer .footer1 {
+    margin-top: 50px;
+    position: absolute;
+    display: flex;
+    font-size: 12px;
+    line-height: 18px;
+    left: 150px;
+}
+footer .footer1 > li {margin-left: 150px;}
+footer .footer1 > li ul li {font-size: 11px;}
+
+footer .footer2 { 
+    position: absolute; 
+    margin-top: 500px;
+    left: 290px;
+}
+footer .footer2 span {float: left; font-size: 12px;}
+footer .footer2 p {
+    position: absolute; 
+    margin-left: 200px; 
+    border-bottom: 1px solid #333; 
+    font-size: 11px; margin-top: 1px;
+}
+footer .footer2 img { 
+    width: 130px; 
+    height : 70px; 
+    object-fit: cover; 
+    margin-left: 140px; 
+    margin-top: -13px;
+}
+footer .footer2 ul li {
+    float: left; 
+    border-bottom: 1px solid #333; 
+    margin-left: 1100px;
+    margin-top: -50px;
+    font-size: 11px;
+}
+footer .footer2 ul li:first-child {margin-left: 1010px;}
+
+footer .footer3 {
+    position: absolute; 
+    margin-top: 600px; 
+    margin-left: 290px;
+    line-height: 25px;
+    font-size: 11px;
+}
